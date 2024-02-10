@@ -1,0 +1,21 @@
+def is_palindrome(num):
+  """
+  This function checks if a given number is a palindrome.
+
+  Args:
+    num: The number to check.
+
+  Returns:
+    True if the number is a palindrome, False otherwise.
+  """
+
+  # Convert the number to a string and reverse it.
+  reversed_num = str(num)[::-1]
+
+  # Check if the original number and the reversed number are the same.
+  return num == int(reversed_num)
+
+# Test the function with different numbers.
+print(is_palindrome(121))  # True
+print(is_palindrome(12321))  # True
+print(is_palindrome(1234))  # False
